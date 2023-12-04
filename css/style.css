@@ -14,9 +14,14 @@ body {
 section {
   padding-bottom: 40px;
   padding-top: 40px;
-  background: url("../img/back2.png") no-repeat 100% -90px fixed;
+  background: url("../img/back2.png") 100% -90px;
   background-size: cover;
 }
+.imgview {
+  min-height: 80dvh;
+  overflow-y: auto;
+}
+
 .btnmedio {
   width: 250px;
   height: 80px;
