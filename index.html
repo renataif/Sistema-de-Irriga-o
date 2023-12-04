@@ -10,6 +10,39 @@
 </head>
 
 <body>
+  <!-- Modal start -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Fazer Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <p>Não possui conta? <a href="#">Cadastre-se</a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Modal end -->
   <nav class="navbar navbar-expand-md py-3 box-shadow" style="background-color: rgba(146, 219, 113, 0.87)">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="logo" width="100"></a>
@@ -48,7 +81,7 @@
             <a class="nav-link color-text" href="#"><img src="/img/envelope.svg" alt="envelope" width="25"></a>
           </li>
           <li class="nav-item ms-4 text-center">
-            <a type="button" class="btn rounded-circle btn-outline-success"><img src="/img/login.svg" alt="login"></a>
+            <a type="button" class="btn rounded-circle btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="/img/login.svg" alt="login"></a>
             <p class="color-text">Fazer Login</p>
           </li>
         </ul>
@@ -57,26 +90,26 @@
   </nav>
   <section class="intro">
     <div class="container">
-      <div class="d-flex flex-row justify-content-center">
+      <div class="d-flex flex-row justify-content-center pt-5 mt-5">
         <div class="p-2"> <a class="btn btn-light btn-lg color-text" href="#"><img src="/img/gear.svg" alt="config" width="25px"> Configurar </a></div>
         <div class="p-2"> <a class="btn btn-light btn-lg color-text" href="#"><img src="/img/droplet-half.svg" alt="gota" width="25px"> Irrigado hoje </a></div>
         <div class="p-2"> <a class="btn btn-light btn-lg color-text" href="#"><img src="/img/file-earmark-text.svg" alt="documento" width="25px"> Relatório </a></div>
       </div>
     </div>
     <div class="container imgview">
-      <div class="row pt-3">
+      <div class="row pt-5">
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text" href="#">Estação <br>Meteorológica</a> </div>
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text" href="#">Sistema de <br>Irrigação</a></div>
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text" href="#">Economia de <br>água</a></div>
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text text-center pt-4" href="#">Agrometeorologia</a></div>
       </div>
-      <div class="row pt-3">
+      <div class="row pt-4">
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text" href="#">Manejo de irrigação <br>localizada</a> </div>
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text" href="#">Gotejamento e <br>microaspersão</a></div>
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text" href="#">Evaporação e <br>transpiração</a></div>
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text" href="#">Tempo de <br>irrigação</a></div>
       </div>
-      <div class="row pt-3">
+      <div class="row pt-4">
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text" href="#">Determinação de <br>variáveis climáticas</a> </div>
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text" href="#">Cultura da <br>planta</a></div>
         <div class="col"> <a class="btn btn-light btn-lg btnmedio color-text" href="#">Coeficiente da <br>cultura</a></div>
