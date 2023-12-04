@@ -56,9 +56,35 @@ footer {
 }
 p,
 a {
+  text-decoration: none;
   margin: 0;
 }
 footer a {
   text-decoration: none;
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .displaynav {
+    display: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+  .displaylogin {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    background: none;
+  }
+  .btnmedio {
+    width: 180px;
+    font-size: 1rem;
+  }
+  .btnintro {
+    width: 120px;
+    font-size: 1rem;
+  }
 }
