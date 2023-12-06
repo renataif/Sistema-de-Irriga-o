@@ -16,10 +16,6 @@ body {
   padding-top: 40px;
   background: url("../img/back2.png") 100% -90px no-repeat;
 }
-.imgview {
-  min-height: 80dvh;
-  overflow-y: auto;
-}
 
 .btnmedio {
   width: 250px;
